@@ -1,8 +1,9 @@
 import './App.css';
+import './index.css';
 
 function App() {
   return (
-    <p className='text-light-purple'>
+    <p className='text-dark-purple'>
         WHAT
     </p>
   );
