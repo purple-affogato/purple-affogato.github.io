@@ -2,7 +2,7 @@
   "name": "purple-affogato-site",
   "version": "0.1.0",
   "homepage": "https://purple-affogato.github.io",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.16.5",
