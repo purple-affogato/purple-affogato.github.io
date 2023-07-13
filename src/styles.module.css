@@ -1,0 +1,15 @@
+.Header {
+    background-color: #c9adf0;
+    display: block;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+  }
+
+  .onHeader {
+    background-color: #40078f;
+    display: block;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+  }
