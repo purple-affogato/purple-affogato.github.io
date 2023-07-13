@@ -1,11 +1,11 @@
 import './App.css';
-import './index.css';
+import Header from './Header';
 
 function App() {
   return (
-    <p className='text-dark-purple'>
-        WHAT
-    </p>
+    <div>
+      <Header></Header>
+    </div>
   );
 }
 
