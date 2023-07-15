@@ -1,11 +1,11 @@
-import {Header, Article} from './components';
+import { Header, Article } from './components';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Article />
-    </div>
+      <div>
+        <Header />
+        <Article />
+      </div>
   );
 }
 

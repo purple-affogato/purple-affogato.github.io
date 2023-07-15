@@ -1,4 +1,4 @@
-.Header, .onHeader {
+.Header {
   display: flex;
   overflow: hidden;
   background-color: #c9adf0;
@@ -19,6 +19,8 @@ p {
   border-radius: 0%;
   position: relative;
   float: right;
+  vertical-align: text-bottom;
+  margin: 1rem;
 }
 
 .siteTitle {
