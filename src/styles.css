@@ -1,0 +1,30 @@
+.Header, .onHeader {
+  display: flex;
+  overflow: hidden;
+  background-color: #c9adf0;
+  padding: 0%;
+  height: 8vh;
+  text-align: center;
+  align-items: center;
+}
+
+p {
+  margin-inline: 1rem;
+}
+
+.HeaderItem {
+  height: 100%;
+  background-color: bisque;
+  display: inline-flex;
+  border-radius: 0%;
+  position: relative;
+  float: right;
+}
+
+.siteTitle {
+  display: inline-flex;
+  color: #8034eb;
+  font-family: 'Consolas';
+  position: relative;
+  margin-inline: 2rem;
+}
