@@ -4,6 +4,7 @@ import App from './App';
 import AboutMe from './AboutMe';
 import ProjectList from './Projects';
 import reportWebVitals from './reportWebVitals';
+import './styles.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([

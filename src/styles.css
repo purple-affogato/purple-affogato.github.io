@@ -1,32 +1,50 @@
 .Header {
-  display: flex;
+  display: block;
   overflow: hidden;
   background-color: #c9adf0;
   padding: 0%;
-  height: 8vh;
-  text-align: center;
-  align-items: center;
+  margin: 0;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 p {
   margin-inline: 1rem;
+  font-family: Consolas;
 }
 
 .HeaderItem {
+  background-color: #c9adf0;
+  color: black;
   height: 100%;
-  background-color: bisque;
-  display: inline-flex;
-  border-radius: 0%;
+  display: inline-block;
   position: relative;
-  float: right;
-  vertical-align: text-bottom;
-  margin: 1rem;
+  font-family: Consolas;
+  font-size: medium;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+
+.HeaderItem :hover {
+  background-color: #40078f;
+  color: white;
 }
 
 .siteTitle {
-  display: inline-flex;
+  display: inline-block;
   color: #8034eb;
   font-family: 'Consolas';
   position: relative;
-  margin-inline: 2rem;
+  margin-left: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.headerNav {
+  background-color: #c9adf0;
+  display: inline-block;
+  height: 100%;
+  float: right;
 }
