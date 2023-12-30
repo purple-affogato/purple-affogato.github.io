@@ -1,9 +1,9 @@
 import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
-import Homepage from './Homepage';
+import Homepage from './App';
 import AboutMe from './AboutMe';
 import ProjectList from './Projects';
-import Template from './App';
+import Template from './Template';
 import reportWebVitals from './reportWebVitals';
 import './styles.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -15,6 +15,7 @@ const router = createBrowserRouter([
     element: <Template />, 
     errorElement: <ErrorPage />,
     children: [
+      {index: true, element: <Homepage />},
       { path: "about-me", element: <AboutMe />, },
       { path: "projects", element: <ProjectList />, },
     ]
