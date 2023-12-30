@@ -1,4 +1,4 @@
-import Template from "./SiteTemplate";
+import Template from "./App";
 
 function ProjectList() {
     return(

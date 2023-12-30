@@ -1,5 +1,5 @@
 import './styles.css';
-import Template from "./SiteTemplate";
+import Template from "./App";
 
 function AboutMe (){
     return (
