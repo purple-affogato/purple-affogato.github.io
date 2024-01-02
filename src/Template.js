@@ -17,20 +17,15 @@ function Header() {
 
     return (
         <header className='Header'>
-            <h2 className='siteTitle'>This is the property of purple-affogato</h2>
+            <h2 className='siteTitle'>purple-affogato</h2>
             <ul className='headerNav'>
-                <HeaderItem text={"About Me"} link={"about-me"} />
-                <HeaderItem text={"Projects"} link={"projects"} />
+                <li className='HeaderItem'>
+                    <Link to="about-me" >About Me</Link>
+                </li>
+                <li className='HeaderItem'>
+                    <Link to="projects" relative='route' >Project</Link>
+                </li>
             </ul>
         </header>
-    );
-}
-
-function HeaderItem({ text, link }) {
-    return (
-        <li className='HeaderItem'>
-            <Link to={link}>{text}</Link>
-        </li>
-
     );
 }

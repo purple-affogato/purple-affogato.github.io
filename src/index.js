@@ -1,31 +1,15 @@
 import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
-import Homepage from './App';
-import AboutMe from './AboutMe';
-import ProjectList from './Projects';
-import Template from './Template';
+import App from './App';
+import { HashRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import './styles.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ErrorPage from './Error';
-
-const router = createBrowserRouter([
-  { 
-    path: "/", 
-    element: <Template />, 
-    errorElement: <ErrorPage />,
-    children: [
-      {index: true, element: <Homepage />},
-      { path: "about-me", element: <AboutMe />, },
-      { path: "projects", element: <ProjectList />, },
-    ]
-  }
-  
-]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
 
