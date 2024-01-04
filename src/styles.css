@@ -9,8 +9,9 @@
 }
 
 p {
-  margin-inline: 1rem;
+  margin-inline: 2rem;
   font-family: Consolas;
+  font-size: medium;
 }
 
 .HeaderItem {
