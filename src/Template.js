@@ -17,15 +17,17 @@ function Header() {
 
     return (
         <header className='Header'>
-            <h2 className='siteTitle'>purple-affogato</h2>
-            <ul className='headerNav'>
-                <li className='HeaderItem'>
-                    <Link to="about-me" >About Me</Link>
-                </li>
-                <li className='HeaderItem'>
-                    <Link to="projects" relative='route' >Project</Link>
-                </li>
-            </ul>
+            <h2 className='siteTitle'>
+                <Link to="/" >purple-affogato</Link>
+            </h2>
+            <nav className='headerNav'>
+                <div className='HeaderItem'>
+                    <Link to="about-me">About Me</Link>
+                </div>
+                <div className='HeaderItem'>
+                    <Link to="projects" >Projects</Link>
+                </div>
+            </nav>
         </header>
     );
 }

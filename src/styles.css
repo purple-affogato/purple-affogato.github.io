@@ -1,15 +1,15 @@
 .Header {
-  display: inline-block;
+  display: block;
   overflow: hidden;
   background-color: #c9adf0;
   height: 10%;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 
 p {
-  margin-inline: 2rem;
+  margin-inline: 12em;
   font-family: Consolas;
   font-size: medium;
 }
@@ -22,8 +22,8 @@ p {
   position: relative;
   font-family: Consolas;
   font-size: medium;
-  margin-left: 1rem;
-  margin-right: 2rem;
+  margin-inline: 1rem;
+  margin-top: 1rem;
 }
 
 .HeaderItem :hover {
@@ -37,7 +37,6 @@ p {
   font-family: 'Consolas';
   position: relative;
   margin-left: 2rem;
-  position: relative;
   text-align: center;
 }
 
@@ -46,10 +45,11 @@ p {
   display: inline-block;
   height: 100%;
   float: right;
+  margin: 0%;
 }
 
 .siteBody {
-  display: inline-block;
-  top: 10%;
-  position: fixed;
+  display: block;
+  position: relative;
+  margin-top: 4em;
 }
