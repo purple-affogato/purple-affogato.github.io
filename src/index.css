@@ -1,0 +1,65 @@
+.Header {
+  display: block;
+  overflow: hidden;
+  background-color: #c9adf0;
+  height: 10%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+p {
+  font-family: Consolas;
+  font-size: medium;
+}
+
+h1 {
+  font-family: Consolas;
+  margin-top: 2em;
+}
+
+.HeaderItem {
+  background-color: #c9adf0;
+  color: black;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  font-family: Consolas;
+  font-size: medium;
+  margin-inline: 1rem;
+  margin-top: 1rem;
+}
+
+.HeaderItem :hover {
+  background-color: #40078f;
+  color: white;
+}
+
+.siteTitle {
+  display: inline-block;
+  color: #8034eb;
+  font-family: 'Consolas';
+  position: relative;
+  margin-left: 2rem;
+  text-align: center;
+}
+
+.headerNav {
+  background-color: #c9adf0;
+  display: inline-block;
+  height: 100%;
+  float: right;
+  margin: 0%;
+}
+
+.siteBody {
+  display: block;
+  overflow: hidden;
+  height: auto;
+  margin-inline: 20%;
+}
+
+.link {
+  font-family: Consolas;
+  display: block;
+}
