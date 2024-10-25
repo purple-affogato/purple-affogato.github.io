@@ -1,6 +1,5 @@
-# My website
+# My personal website
 
 TODO:
 - add projects to the project list
-- add error page
-- change logo/icon
+- make it more "aesthetic"
