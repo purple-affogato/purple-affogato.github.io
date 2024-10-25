@@ -1,43 +1,49 @@
+:root {
+  --dark-purple: #40078f;
+  --bg-color: #c9adf0;
+}
+
 .Header {
   display: block;
   overflow: hidden;
-  background-color: #c9adf0;
+  background-color: var(--bg-color);
   height: 10%;
   width: 100%;
-  position: sticky;
+  position: relative;
   top: 0;
 }
 
 p {
   font-family: Consolas;
   font-size: medium;
+  color: white;
 }
 
 h1 {
   font-family: Consolas;
-  margin-top: 2em;
+  color: white;
 }
 
 .HeaderItem {
   background-color: #c9adf0;
-  color: black;
   height: 100%;
-  display: inline-block;
+  display: inline-flex;
   position: relative;
-  font-family: Consolas;
-  font-size: medium;
-  margin-inline: 1rem;
-  margin-top: 1rem;
+  margin: 0;
+  padding-inline: 1rem;
+  padding-block: 0;
+  vertical-align: middle;
+  width: auto;
 }
 
 .HeaderItem :hover {
-  background-color: #40078f;
+  background-color: var(--dark-purple);
   color: white;
 }
 
 .siteTitle {
   display: inline-block;
-  color: #8034eb;
+  color: var(--dark-purple);
   font-family: 'Consolas';
   position: relative;
   margin-left: 2rem;
@@ -45,21 +51,36 @@ h1 {
 }
 
 .headerNav {
-  background-color: #c9adf0;
-  display: inline-block;
+  background-color: var(--bg-color);
+  display: inline-flex;
+  position: relative;
   height: 100%;
-  float: right;
-  margin: 0%;
+  margin-left: 2rem;
 }
 
 .siteBody {
   display: block;
+  width: auto;
   overflow: hidden;
   height: auto;
-  margin-inline: 20%;
+  padding-inline: 20%;
+  padding-top: 2rem;
 }
 
 .link {
   font-family: Consolas;
   display: block;
+  text-decoration: underline;
+}
+
+.HeaderLink {
+  font-family: Consolas;
+  font-size: medium;
+  display: inline-flex;
+  text-decoration: none;
+  color: var(--dark-purple);
+  vertical-align: middle;
+  margin-inline:auto;
+  margin-block: 0;
+  text-align: center;
 }

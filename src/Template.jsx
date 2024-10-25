@@ -21,10 +21,10 @@ function Header() {
             </h2>
             <nav className='headerNav'>
                 <div className='HeaderItem'>
-                    <Link to="about-me">About Me</Link>
+                    <Link to="about-me" className='HeaderLink'>About Me</Link>
                 </div>
                 <div className='HeaderItem'>
-                    <Link to="projects" >Projects</Link>
+                    <Link to="projects" className='HeaderLink'>Projects</Link>
                 </div>
             </nav>
         </header>

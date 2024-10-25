@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 function ProjectList() {
+    useEffect(() => {
+
+    });
     return(
         <div>
             <h1>Projects</h1>

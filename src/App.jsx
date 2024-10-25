@@ -13,7 +13,7 @@ function App() {
       <Routes>
             <Route path="/" element={<Template />} errorElement={<ErrorPage/>}>
                 <Route index element={<Homepage/>}  />
-                <Route path='*' element={<Error/>} />
+                <Route path='*' element={<ErrorPage/>} />
                 <Route path="about-me" element={<AboutMe />}/>
                 <Route path="projects" element={<ProjectList />}/>
             </Route>
