@@ -71,6 +71,7 @@ h1 {
   font-family: Consolas;
   display: block;
   text-decoration: underline;
+  color: var(--dark-purple);
 }
 
 .HeaderLink {
