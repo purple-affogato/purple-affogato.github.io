@@ -1,12 +1,14 @@
 :root {
   --dark-purple: #40078f;
-  --bg-color: #c9adf0;
+  --pastel-purple: #c9adf0;
+  --bg: #1b1a1c;
+  --header-color: #dfd0f5;
 }
 
 .Header {
   display: block;
   overflow: hidden;
-  background-color: var(--bg-color);
+  background-color: var(--pastel-purple);
   height: 10%;
   width: 100%;
   position: relative;
@@ -16,12 +18,12 @@
 p {
   font-family: Consolas;
   font-size: medium;
-  color: white;
+  color: var(--pastel-purple);
 }
 
 h1 {
   font-family: Consolas;
-  color: white;
+  color: var(--header-color);
 }
 
 .HeaderItem {
@@ -51,7 +53,7 @@ h1 {
 }
 
 .headerNav {
-  background-color: var(--bg-color);
+  background-color: var(--pastel-purple);
   display: inline-flex;
   position: relative;
   height: 100%;
@@ -62,16 +64,16 @@ h1 {
   display: block;
   width: auto;
   overflow: hidden;
-  height: auto;
   padding-inline: 20%;
   padding-top: 2rem;
+  background-color: var(--bg);
 }
 
 .link {
   font-family: Consolas;
   display: block;
   text-decoration: underline;
-  color: var(--dark-purple);
+  color: var(--pastel-purple);
 }
 
 .HeaderLink {
