@@ -1,0 +1,23 @@
+:root {
+    --dark-purple: #40078f;
+    --pastel-purple: #c9adf0;
+    --bg: #1b1a1c;
+    --header-color: #dfd0f5;
+}
+
+li {
+    font-family: 'Consolas';
+    color: white;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Consolas';
+    color: var(--header-color);
+}
+ 
+.github {
+    color: var(--pastel-purple);
+    font-family: 'Consolas';
+    text-decoration: underline;
+}

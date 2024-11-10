@@ -1,5 +1,5 @@
 # My personal website
 
 TODO:
-- add projects to the project list
-- make it more "aesthetic"
+- add skills to homepage
+- add experiences somewhere (ACM, etc.)
