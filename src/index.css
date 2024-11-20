@@ -5,16 +5,6 @@
   --header-color: #dfd0f5;
 }
 
-.Header {
-  display: block;
-  overflow: hidden;
-  background-color: var(--pastel-purple);
-  height: 10%;
-  width: 100%;
-  position: relative;
-  top: 0;
-}
-
 p {
   font-family: Consolas;
   font-size: medium;
@@ -26,68 +16,9 @@ h1 {
   color: var(--header-color);
 }
 
-.HeaderItem {
-  background-color: #c9adf0;
-  height: 100%;
-  display: inline-flex;
-  position: relative;
-  margin: 0;
-  padding-inline: 1rem;
-  padding-block: 0;
-  vertical-align: middle;
-  width: auto;
-}
-
-.HeaderItem :hover {
-  background-color: var(--dark-purple);
-  color: white;
-}
-
-.siteTitle {
-  display: inline-block;
-  color: var(--dark-purple);
-  font-family: 'Consolas';
-  position: relative;
-  margin-left: 2rem;
-  text-align: center;
-}
-
-.siteTitle :active {
-  color: white;
-}
-
-.headerNav {
-  background-color: var(--pastel-purple);
-  display: inline-flex;
-  position: relative;
-  height: 100%;
-  margin-left: 2rem;
-}
-
-.siteBody {
-  display: block;
-  width: auto;
-  overflow: hidden;
-  padding-inline: 20%;
-  padding-top: 2rem;
-  background-color: var(--bg);
-}
-
 .link {
   font-family: Consolas;
   display: block;
   text-decoration: underline;
   color: var(--pastel-purple);
-}
-
-.HeaderLink {
-  font-family: Consolas;
-  font-size: medium;
-  display: inline-flex;
-  text-decoration: none;
-  color: var(--dark-purple);
-  vertical-align: middle;
-  margin-inline:auto;
-  margin-block: 0;
-  text-align: center;
 }

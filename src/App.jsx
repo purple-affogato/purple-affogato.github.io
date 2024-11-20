@@ -3,7 +3,7 @@ import {Routes, Route} from 'react-router-dom';
 import ErrorPage from './Error.jsx';
 import Homepage from './Homepage.jsx';
 import ProjectList from './Projects.jsx';
-import Template from './Template.jsx';
+import Template from './components/Template.jsx';
 import AboutMe from './AboutMe.jsx';
 
 function App() {

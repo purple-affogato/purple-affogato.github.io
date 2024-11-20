@@ -1,0 +1,61 @@
+:root {
+    --dark-purple: #40078f;
+    --pastel-purple: #c9adf0;
+    --bg: #1b1a1c;
+    --header-color: #dfd0f5;
+  }
+
+.Header {
+    display: block;
+    background-color: var(--pastel-purple);
+    height: 5em;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+.HeaderItem {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 1rem;
+    padding: 0;
+    line-height: 5em;
+    width: auto;
+    font-family: Consolas;
+    font-size: medium;
+    text-decoration: none;
+    color: var(--dark-purple);
+    vertical-align: middle;
+    margin-inline:auto;
+    top: 0;
+}
+
+.HeaderItem :hover {
+    background-color: var(--dark-purple);
+    color: white;
+}
+
+.siteTitle {
+    display: inline-block;
+    color: var(--dark-purple);
+    font-family: 'Consolas';
+    position: relative;
+    margin-inline: 2rem;
+    text-align: center;
+}
+
+.siteTitle :active {
+    color: white;
+}
+
+.siteBody {
+    display: block;
+    padding-inline: 20%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 2rem;
+    background-color: var(--bg);
+    overflow-wrap: break-word;
+    width: auto;
+}
