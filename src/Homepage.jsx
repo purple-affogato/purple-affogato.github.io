@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import {experiences} from './ExperienceData.jsx';
+import {experiences} from './ExperienceData';
 import { Experience } from "./components/ExperienceBlurb";
 
 function Homepage() {
