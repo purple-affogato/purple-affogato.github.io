@@ -11,3 +11,7 @@ body {
   src: url('./assets/ttf/CONSOLA.TTF');
   font-weight: normal;
 }
+
+div.content-container {
+  margin-inline: 2em;
+}
