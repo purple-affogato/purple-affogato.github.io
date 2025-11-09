@@ -7,15 +7,15 @@
     const pages = [
         {
             link: "/",
-            page: "Home"
+            page: "> Home"
         },
         {
             link: "/experience",
-            page: "Experience"
+            page: "> Experience"
         },
         {
             link: "/more",
-            page: "More"
+            page: "> More"
         }
     ];
     $effect(() => {
@@ -27,7 +27,7 @@
 </script>
 
 <div class='sidebar' style:--bar-width={barWidth}>
-    <button onclick={() => {isOpen = !isOpen;}}>X</button>
+    <button onclick={() => {isOpen = !isOpen;}}>=</button>
     <div id="links" class:open={isOpen}>
         <p>Navigation</p>
         {#each pages as p}
@@ -42,20 +42,30 @@
     button {
         background: none;
         color: white;
-        align-self: center;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        text-align: center;
+        font-size: large;
+    }
+    button:hover {
+        color: blueviolet;
+    }
+    button:focus:active {
+        border: none;
     }
     div.sidebar {
         background-color: #1B1B1D;
         height: 100%;
         width: var(--bar-width);
-        position: absolute;
+        position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
         overflow-x: hidden;
-        transition: 0.5s;
+        transition: width 0.5s;
         display: block;
-        box-shadow: 3px 0 10px lightblue;
+        border-right: 2px solid white;
     }
     .pageLink {
         color: white;
@@ -63,6 +73,7 @@
     }
     .pageLink:hover {
         color: blueviolet;
+        text-decoration: underline;
     }
     #links.open {
         display: block;

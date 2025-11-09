@@ -2,8 +2,13 @@ body {
   color: white;
   font-family: "Consolas";
   font-weight: normal;
-  font-size: larger;
   margin: 0;
+  font-size: larger;
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: medium;
+  }
 }
 
 @font-face {
