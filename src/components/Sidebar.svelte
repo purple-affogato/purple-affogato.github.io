@@ -14,9 +14,13 @@
             page: "> Experience"
         },
         {
+            link: "/projects",
+            page: "> Projects"
+        },
+        {
             link: "/more",
             page: "> More"
-        }
+        },
     ];
     $effect(() => {
         if (isOpen)

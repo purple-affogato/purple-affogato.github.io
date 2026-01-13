@@ -4,10 +4,9 @@
   import Home from './pages/Home.svelte';
   import Experience from './pages/Experience.svelte';
   import More from './pages/More.svelte';
+  import Projects from './pages/Projects.svelte';
 
   let url = $state("");
-  let isSidebarOpen = $state(false);
-  let leftMargin = $state("0");
 </script>
 
 <Router {url}>
@@ -16,6 +15,7 @@
     <Route path="/"><Home/></Route>
     <Route path="/experience"><Experience/></Route>
     <Route path="/more"><More/></Route>
+    <Route path="/projects"><Projects/></Route>
   </div>
 </Router>
 

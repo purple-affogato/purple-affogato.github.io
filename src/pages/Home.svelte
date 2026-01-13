@@ -5,24 +5,34 @@
     import { link } from "svelte-routing";
 
     let title = $state("");
-    const cat = "  /\\_/\\\n=( o.o )=\n";
-    const bunny = " (\\ /)\n( *^* )\n";
-    const catOnFence = "           *     ,MMM8&&&.            *\n                MMMM88&&&&&    .\n               MMMM88&&&&&&&\n   *           MMM88&&&&&&&&\n               MMM88&&&&&&&&\n               'MMM88&&&&&&'\n                 'MMM8&&&'      *\n        |\\___/|\n        )     (             .              '\n       =\\     /=\n         )===(       *\n        /     \\\n        |     |\n       /       \\\n       \\       /\n_/\\_/\\_/\\__  _/_/\\_/\\_/\\_/\\_/\\_/\\_/\\_/\\_/\\_\n|  |  |  |( (  |  |  |  |  |  |  |  |  |  |\n|  |  |  | ) ) |  |  |  |  |  |  |  |  |  |\n|  |  |  |(_(  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |  |\njgs|  |  |  |  |  |  |  |  |  |  |  |  |  |";
 
     const sections = [
         {
             title: "Experience",
-            description: "> My work experience and projects.",
-            characters: 34,
+            description: "> My work experience, extra-curriculars, and volunteer work.",
             link: "/experience"
         },
         {
-            title: "More About Me",
+            title: "Projects",
+            description: "> Things I've worked on in my free time!",
+            link: "/projecets"
+        },
+        {
+            title: "More",
             description: "> Read more about me outside of dev and a bit about how I made this website.",
-            characters: 76,
             link: "/more"
         }
     ];
+    const contactInfo = [
+        {
+            name: "GitHub",
+            link: "https://github.com/purple-affogato"
+        },
+        {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/in/ivy-y-zhuang/"
+        }
+    ]
 
     figlet.defaults({fontPath: window.location.origin + '/assets/flf'})
 
@@ -47,11 +57,11 @@
 </script>
 
 <div>
-  <PWD wd="" lastUpdated="2025/11"/>
+  <PWD wd="" lastUpdated="2026/01"/>
   <div class="content-container">
     <p class="title">{title}</p>
     <p class="intro">Hi, I'm Ivy!</p>
-    <span class="typewriter" style:--n=234>I'm a Computer Science and Engineering student at Santa Clara University. Currently, I'm interested in backend software engineering, networking, IoT, and databases.</span>
+    <span class="typewriter" style:--n=234>I'm a Computer Science and Engineering student at Santa Clara University. Currently, I'm interested in backend software engineering, data science, and IoT.</span>
     <br/>
     <br/>
     <span class="typewriter" style:--n=25>Learn more about me here!</span>
@@ -61,12 +71,18 @@
     <div>
         <a class="sectionLink" href={s.link} use:link>{s.title}</a>
         <br/>
-        <span class="typewriter" style:--n={s.characters}>{s.description}</span>
+        <span class="typewriter" style:--n={s.description.length}>{s.description}</span>
     </div>
     {/each}
-    <p style="white-space: pre;">{catOnFence}</p>
-    <!-- <p style="white-space:pre;"> {bunny}</p>
-    <p style="white-space:pre;"> {cat} </p> -->
+    <br/>
+     <span class="typewriter" style:--n=29>Other places you can find me:</span>
+     <ul>
+        {#each contactInfo as c}
+        <li>
+            <a class="contactLink" href={c.link} use:link target="_blank" rel="noopener noreferrer">{c.name}</a>
+        </li>
+        {/each}
+     </ul>
   </div>
 </div>
 
@@ -97,6 +113,10 @@
         text-decoration: underline;
         background-color: indigo;
         color: white;
+    }
+    .contactLink {
+        color: white;
+        text-decoration: underline;
     }
     @keyframes t{
         from {background-size:0 200%}
