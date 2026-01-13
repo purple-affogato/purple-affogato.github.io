@@ -1,0 +1,44 @@
+body {
+  color: white;
+  font-family: "Consolas";
+  font-weight: normal;
+  margin: 0;
+  font-size: larger;
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: medium;
+  }
+}
+
+@font-face {
+  font-family: 'Consolas';
+  src: url('./assets/ttf/CONSOLA.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Consolas';
+  src: url('./assets/ttf/CONSOLAB.TTF');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Consolas';
+  src: url('./assets/ttf/CONSOLAI.TTF');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Consolas';
+  src: url('./assets/ttf/CONSOLAZ.TTF');
+  font-weight: bold;
+  font-style: italic;
+}
+
+div.content-container {
+  margin-inline: 2em;
+}
