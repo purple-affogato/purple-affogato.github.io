@@ -24,15 +24,15 @@
     ];
     $effect(() => {
         if (isOpen)
-            barWidth = "250px";
+            barWidth = 250;
         else
-            barWidth = "50px";
+            barWidth = 50;
     });
 </script>
 
 <div class='sidebar' style:--bar-width={barWidth}>
     <button onclick={() => {isOpen = !isOpen;}}>=</button>
-    <div id="links" class:open={isOpen}>
+    <div id="links" class:open={isOpen} >
         <p>Navigation</p>
         {#each pages as p}
             <div>
@@ -61,7 +61,7 @@
     div.sidebar {
         background-color: #1B1B1D;
         height: 100%;
-        width: var(--bar-width);
+        width: calc(var(--bar-width) * 1px);
         position: fixed;
         z-index: 1;
         top: 0;
