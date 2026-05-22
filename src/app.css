@@ -44,7 +44,7 @@ div.content-container {
     margin-right: 8em;
 }
 
-p.title {
+p.header {
     background-color: blueviolet;
     width: fit-content;
     text-decoration: underline;

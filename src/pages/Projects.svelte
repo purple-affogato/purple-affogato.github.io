@@ -58,7 +58,7 @@
 <div>
     <PWD wd={window.location.pathname} lastUpdated="2026/01"></PWD>
     <div class="content-container">
-        <p class="title">Projects</p>
+        <p class="header">Projects</p>
         <p>Check out my <a href="https://github.com/purple-affogato/" target="_blank" rel="noopener noreferrer">GitHub</a> for more info!</p>
         {#each projects as pr}
         <Project name={pr.name} points={pr.points} status={pr.status} link={pr.link}/>
@@ -68,11 +68,6 @@
 </div>
 
 <style scoped>
-    .title {
-        background-color: blueviolet;
-        width: fit-content;
-        text-decoration: underline;
-    }
     a {
         color: blueviolet;
     }

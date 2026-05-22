@@ -1,0 +1,20 @@
+**
+
+```C:\projs\portfolio-site\public\404.html#L1-20
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found</title>
+    <script>
+        // Redirect to index.html, preserving the path for client-side routing
+        const path = window.location.pathname + window.location.search;
+        sessionStorage.redirect = path;
+        window.location.href = '/index.html';
+    </script>
+</head>
+<body>
+    <p>404</p>
+</body>
+</html>

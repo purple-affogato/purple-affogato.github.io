@@ -14,7 +14,7 @@
 <div>
     <PWD wd={window.location.pathname} lastUpdated="2026/05"></PWD>
     <div class="content-container">
-        <p class="title">Blog</p>
+        <p class="header">Blog</p>
         {#each posts as p}
             <a href={"/blog/" + p.link}>{p.title}</a>
         {/each}
