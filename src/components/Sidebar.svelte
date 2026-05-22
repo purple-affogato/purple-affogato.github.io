@@ -71,7 +71,7 @@
         top: 0;
         left: 0;
         overflow-x: hidden;
-        transition: width 0.5s;
+        transition: width 0.2s;
         display: block;
         border-right: 2px solid white;
     }
@@ -89,5 +89,6 @@
     #links {
         display: none;
         padding: 1em;
+        white-space: nowrap;
     }
 </style>
