@@ -2,7 +2,7 @@
     import {link} from 'svelte-routing';
 
     let isOpen = $state(false);
-    let barWidth = $state("50px")
+    let barWidth = $state(50)
 
     const pages = [
         {
@@ -16,6 +16,10 @@
         {
             link: "/projects",
             page: "> Projects"
+        },
+        {
+            link: "/blog",
+            page: "> Blog"
         },
         {
             link: "/more",

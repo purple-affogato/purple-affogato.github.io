@@ -40,5 +40,12 @@ body {
 }
 
 div.content-container {
-  margin-inline: 2em;
+    margin-left: 2em;
+    margin-right: 8em;
+}
+
+p.title {
+    background-color: blueviolet;
+    width: fit-content;
+    text-decoration: underline;
 }
