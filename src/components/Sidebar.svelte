@@ -18,10 +18,6 @@
             page: "> Projects"
         },
         {
-            link: "/blog",
-            page: "> Blog"
-        },
-        {
             link: "/more",
             page: "> More"
         },

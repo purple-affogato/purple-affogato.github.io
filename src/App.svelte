@@ -5,8 +5,6 @@
   import Experience from './pages/Experience.svelte';
   import More from './pages/More.svelte';
   import Projects from './pages/Projects.svelte';
-  import Blog from './pages/Blog.svelte';
-  import Post from './pages/Post.svelte';
 
   const url = "";
 </script>
@@ -18,8 +16,6 @@
     <Route path="/experience"><Experience/></Route>
     <Route path="/more"><More/></Route>
     <Route path="/projects"><Projects/></Route>
-    <Route path="/blog"><Blog/></Route>
-    <Route path="/blog/:id" let:params><Post title="{params.id}"/></Route>
   </div>
 </Router>
 
